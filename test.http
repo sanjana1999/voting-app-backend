@@ -1,0 +1,16 @@
+POST http://localhost:5000/posts/all
+Content-Type: application/json
+
+{
+
+}
+
+###
+
+POST http://localhost:5000/posts/upvote
+Content-Type: application/json
+
+{
+    "unique":"qwerty",
+    "id":"5f9bd34e2cee8d38cc046dce"
+}
