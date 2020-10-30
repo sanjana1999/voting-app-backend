@@ -15,6 +15,9 @@ router.route('/add').post(async function(req, res){
 router.route('/all').post(async function(req,res){
     let allposts = await posts.find({});
     if(allposts){
+        allposts.sort((a, b) => 
+            (a.upvotes <= b.upvotes) ? 1 : -1
+        );
         return res.send(allposts);
     }
 });
