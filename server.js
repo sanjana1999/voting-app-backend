@@ -22,7 +22,6 @@ app.use(express.json({limit: '50mb'}));
 app.use("/uniqueid",uniqueidroutes);
 app.use("/posts",postroutes);
 
-
 app.listen(PORT, function(){
     console.log("Server is running on Port: " +PORT);
 })
